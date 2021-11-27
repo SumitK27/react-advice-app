@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+#root,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    overflow: hidden;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("./images/background.jpg");
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+    margin: 5rem;
+    padding: 2rem;
+    width: 60vw;
+    min-height: 30vh;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.heading {
+    font-size: 2rem;
+    min-height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+    border: 2px solid rgb(123, 157, 93);
+    color: rgb(123, 157, 93);
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    max-width: 15rem;
+    transition: 0.25s ease-in-out;
+}
+
+.button:hover {
+    border: none;
+    background-color: rgb(123, 157, 93);
+    color: white;
 }
